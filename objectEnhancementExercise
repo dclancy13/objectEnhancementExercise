@@ -1,0 +1,35 @@
+function createInstructor(firstName, lastName) {
+    return {
+        firstName, lastName
+    }
+}
+
+let favoriteNumber = 42;
+
+let instructor = {
+    firstName: "Colt"
+    [favoriteNumber]
+}
+
+instructor[favoriteNumber] = "That is my favorite!"
+
+
+
+let instructor2 = {
+    firstName: "Colt",
+    sayHi() {
+        return "Hi!"
+    },
+    sayBye() {
+        return this.firstName + " says bye!";
+    }
+}
+
+function createAnimal(species, verb, sound) {
+    return {
+        species: species,
+        [verb]: function () {
+            return sound;
+        }
+    }
+}
